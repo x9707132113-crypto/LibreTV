@@ -10,8 +10,6 @@ permissions:
   contents: read
   issues: write
   pull-requests: write
-  models: read
-  actions: write
 
 jobs:
   spam-detection:

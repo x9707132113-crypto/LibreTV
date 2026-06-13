@@ -6,6 +6,10 @@ on:
       - main
   workflow_dispatch:
 
+concurrency:
+  group: bump-version
+  cancel-in-progress: true
+
 jobs:
   bump-version:
     if: github.repository == 'LibreSpark/LibreTV'
